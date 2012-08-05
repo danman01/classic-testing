@@ -1,6 +1,7 @@
 Meetup 1 (8/5/2012)
 
 **Agenda**
+
 6:30 - 6:45 show up and general chit chat
 
 6:45 - 7:15 introduction to testing, why you need to be doing it, briefly touch on some tools that rails offers you to help with your testing
@@ -36,7 +37,8 @@ Alternate framework: rspec (https://github.com/rspec/rspec-rails/)
 
 Testing serves a few different purposes: making sure your new code won't break old code, documentation for the code you write (many times tests will read like plain english), and they tremendously help other people who inheret your code after you are gone.
 
-A database just for tests:
+**A database just for tests**
+
 Your test database will by default be a sqlite3 database that you need to set up before you start writing tests.  To copy the schema from your dev environment to the test db, run 'rake db:test:prepare' 
 
 To run a single test run 'ruby -I test test/unit/person_test.rb'
@@ -47,14 +49,16 @@ The first thing to do when writing a test is figure out what to test.  Let's say
 
 Refer to the rails guide for specific commands and more on getting started: http://guides.rubyonrails.org/testing.html
 
-Test driven develoopement:
+**Test driven develoopement**
+
 This method of development is being used and evangalized throughout the world and supposedly is the best way to write code these days.  The premise is simple, but it takes a while to ingrain this method into your habits.  To do test driven develoment, first write a failing test for the piece of functionality that you desire, like asserting that a name is unique for a new person that you save.  Then, run the test, watch it fail (because you haven't actually written the code yet), and move into your actual model to write the code that makes the test pass.
 
 The challenge for today is to choose a test framework (likely the built in test suite or the popular rspec), and using test driven development, solve the following problem implementing a golf program for an aspiring caddy.
 
 You can use rails or just plain ruby.  The important thing is to do test driven developement and write tests that describe the problem you are trying to solve.
 
-Problem: Game of golf - why so confusing? hint - it doesn't have to be!
+**Problem**
+Game of golf - why so confusing? hint - it doesn't have to be!
 
 The game of golf is mysterious in many ways. First, it is hard to understand what is so nice about hitting a ball over 200 yards, and then go looking for it. Second, it is difficult to see how people who have all the time in the world to carefully count the number of strokes they make, seem to be able to forget some of them, as is shown by the low scores turned in at the end of the round by many club players. Third, instead of counting in numbers, they use terms like 'par', 'birdie' (1 below par) and 'bogey' (1 over par), and in rare cases 'hole-in-one', 'eagle' (2 below par), 'double eagle' (3 below par) and 'double bogey' (2 over par). Although it is possible to get worse than a double bogey, and they have names for those too, we'll just assume that most people when getting more than a double bogey will forget the extra strokes and write down 'double bogey'.
 
