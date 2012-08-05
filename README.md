@@ -27,10 +27,15 @@ The cool thing with a framework like rails is that tests are baked in right from
 If you make a new rails app (I'm using rails 3.2.3 and ruby 1.9.3), you will have a new directory, test, with a few folders to get you started. These folders are generated when create the app and are populated when you use, for example, 'rails generate scaffold Person' or 'rails g model Ship'
 
 Within the test directory you will have:
-fixtures: setup reusable objects to test with (alternate tool: FactoryGirl gem)
+
+fixtures: setup reusable objects to test with (alternate tool: FactoryGirl gem: https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STARTED.md)
+
 functional: tests controller actions
+
 integration: flows through one or more controllers
+
 test_helper.rb: place any code to help tests run
+
 unit: tests models 
 
 Alternate framework: rspec (https://github.com/rspec/rspec-rails/)
