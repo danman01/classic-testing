@@ -1,5 +1,5 @@
 This started as a rails testing group, but will likely turn into an advanced software development discussion, with emphasis on writing tests.  Join the classic-testing listserve and also send me your github username if you want to upload your code to this repository.  Meetings have been on Sundays at Four Athens, and we'll try to keep the schedule up to date!
-**Agenda**
+# Agenda
 
 6:30 - 6:45 show up and general chit chat
 
